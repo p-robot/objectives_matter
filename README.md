@@ -2,7 +2,7 @@
 
 #### Supplementary information for:
 
-*Decision-making for foot-and-mouth disease control: objectives matter* (2015) William J M Probert, Katriona Shea, Christopher J Fonnesbeck, Michael C Runge, Tim E. Carpenter, Salome Dürr, M. Graeme Garner, Neil Harvey, Mark A. Stevenson, Colleen T. Webb, Marleen Werkman, Michael J Tildesley, Matthew J Ferrari.  Epidemics.  
+Probert WJM, Shea K, Fonnesbeck CJ, Runge MC, Carpenter TE, Dürr S, Garner MG, Harvey N, Stevenson MA, Webb CT, Werkman M, Tildesley MJ, Ferrari MJ.  (2015) *Decision-making for foot-and-mouth disease control: objectives matter* Epidemics.  
 
 #### Abstract
 

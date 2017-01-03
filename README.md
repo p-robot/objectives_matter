@@ -1,8 +1,6 @@
 # Decision-making for foot-and-mouth disease control: objectives matter
 
-#### Supplementary information for:
-
-Probert WJM, Shea K, Fonnesbeck CJ, Runge MC, Carpenter TE, Dürr S, Garner MG, Harvey N, Stevenson MA, Webb CT, Werkman M, Tildesley MJ, Ferrari MJ (2015) *Decision-making for foot-and-mouth disease control: objectives matter* Epidemics. 
+This repository houses the supplementary information for the manuscript [Probert et al. (2016) *Decision-making for foot-and-mouth disease control: objectives matter* Epidemics 15. 10-19.](http://www.sciencedirect.com/science/article/pii/S175543651500095X).  
 
 #### Abstract
 

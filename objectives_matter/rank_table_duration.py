@@ -384,16 +384,17 @@ def run_analysis():
                 'metric', 'duration', 'livestock culled', mod, \
                 ax[row, col], x_lab_on, y_lab_on, ticksize = ticksize, \
                 var_to_plot = plot_type)
-            
-        plt.figtext(.5,.01,'Outbreak duration',\
-            fontsize = ax_fontsize, ha='center')
         
-        plt.figtext(.02,.5,'Livestock culled',\
-            fontsize = ax_fontsize, ha='center', rotation = 'vertical')
+        plt.figtext(.5,.04,'Outbreak duration',\
+            fontsize = ax_fontsize, ha='center', va = 'center')
+        
+        plt.figtext(.04,.5,'Livestock culled',\
+            fontsize = ax_fontsize, va = 'center', ha='center', \
+            rotation = 'vertical')
         
         fig.set_size_inches(fig_x, fig_y)
         
-        create_legend(ax[0,2], fontsize = ledge_fontsize)
+        create_legend(ax[0,2], fontsize = ledge_fontsize, markersize = 20)
         
         figname = 'scatter_single_model_all_'+plot_type+'.pdf'
         figurepath = os.path.join(main_dir, 'graphics', figname)
@@ -403,7 +404,7 @@ def run_analysis():
     # Create the custom legend
     fig = plt.figure(figsize = (6, 6), frameon=False)
     ax = fig.add_subplot(111)
-    create_legend(ax)
+    create_legend(ax, markersize = 12)
     plt.savefig(os.path.join(main_dir, "graphics","legend_all.pdf"), dpi = 400)
     plt.close()
     
@@ -433,19 +434,24 @@ def run_analysis():
         dpi = 600, bbox_inches = 'tight', pad_inches = 0)
 
 #### Output the legend
-def create_legend(ax, fontsize = 14):
+def create_legend(ax, fontsize = 14, markersize = 15):
     
     plt.rc('legend',**{'fontsize':fontsize})
     
     models = mpatches.Patch(color=(1,1,1,1), label='Model')
     
-    Apatch = mpatches.Patch(color='#984EA3', label='A')
-    Bpatch = mpatches.Patch(color='#FF7F00', label='B')
-    Cpatch = mpatches.Patch(color='#4DAF4A', label='C')
-    Dpatch = mpatches.Patch(color='#377EB8', label='D')
-    Epatch = mpatches.Patch(color='#E41A1C', label='E')
+    Apatch = mpatches.Patch(color='#984EA3', label='A', alpha = 0.45, \
+        edgecolor = 'none')
+    Bpatch = mpatches.Patch(color='#FF7F00', label='B', alpha = 0.45, \
+        edgecolor = 'none')
+    Cpatch = mpatches.Patch(color='#4DAF4A', label='C', alpha = 0.45, \
+        edgecolor = 'none')
+    Dpatch = mpatches.Patch(color='#377EB8', label='D', alpha = 0.45, \
+        edgecolor = 'none')
+    Epatch = mpatches.Patch(color='#E41A1C', label='E', alpha = 0.45, \
+        edgecolor = 'none')
     
-    line_props = {'markersize':15, 'linestyle': 'None', 'alpha': 0.7,\
+    line_props = {'markersize': markersize, 'linestyle': 'None', 'alpha': 0.7,\
         'color':'black'}
     
     controls = mpatches.Patch(color=(1,1,1,1), label='Control')
@@ -460,11 +466,12 @@ def create_legend(ax, fontsize = 14):
     space = mpatches.Patch(color=(1,1,1,1), label='')
     
     all_handles = [models, Apatch,  Bpatch, Cpatch, Dpatch, Epatch, \
-        space, space, \
-        controls, ip, dc, rc, v3l, v3k, v10l, v10k]
-
+        space, space, controls, ip, dc, rc, v3l, v3k, v10l, v10k]
+    
     legend_all = ax.legend(handles = all_handles, \
-        loc = 10, numpoints = 1, frameon = False, ncol = 2)
+        loc = 10, numpoints = 1, frameon = False, ncol = 2, \
+        framealpha = 0.0)
+    
     ax.set_frame_on(False)
     ax.set_xticks([])
     ax.set_xticklabels([])

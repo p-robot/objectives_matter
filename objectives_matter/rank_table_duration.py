@@ -1,11 +1,11 @@
 """
-Script... 
+Python script to generate tables for the manuscript Probert et al. (2016) Decision-making for foot-and-mouth disease control: objectives matter. Epidemics. 15. 10-19. 
 
 
 
 
-Other color schemes that might work taken from http://colorbrewer2.org/ with
-the chosen options of diverging/sequential and that are colorblind safe:
+Color schemes taken from http://colorbrewer2.org/ with
+the chosen option of a diverging/sequential scheme that is colorblind safe:
 
 [["#2166ac", "#f7f7f7", "#b2182b"], 
 ["#4575b4", "#ffffbf", "#d73027"], 
@@ -29,7 +29,7 @@ Contact
 -------------
 
 W. Probert, 2015
-wjp11@psu.edu
+will [at] probert [dot] co [dot] nz
 
 """
 

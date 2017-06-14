@@ -2,7 +2,7 @@
 
 This repository houses the supplementary information for the manuscript:
 
-[Probert et al. (2016) *Decision-making for foot-and-mouth disease control: objectives matter* Epidemics 15. 10-19.](http://www.sciencedirect.com/science/article/pii/S175543651500095X).  
+[Probert et al. (2016) *Decision-making for foot-and-mouth disease control: objectives matter*. Epidemics. 15. 10-19](http://www.sciencedirect.com/science/article/pii/S175543651500095X).  
 
 #### Abstract
 
